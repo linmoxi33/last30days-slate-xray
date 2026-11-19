@@ -1,0 +1,91 @@
+{
+  "clusters": 8,
+  "distinct_event_ratio": 0.25,
+  "event_count": 2,
+  "events": [
+    {
+      "clusters": [
+        {
+          "rank": 1,
+          "score": 59,
+          "title": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues"
+        },
+        {
+          "rank": 2,
+          "score": 57,
+          "title": "Outlook is DOWN: What Microsoft Broke (Retired Microsoft Engineer Explains)"
+        },
+        {
+          "rank": 3,
+          "score": 55,
+          "title": "Microsoft outage impacts millions. Tech expert explains the ripple effects"
+        },
+        {
+          "rank": 4,
+          "score": 49,
+          "title": "Microsoft says Outlook and other Microsoft 365 services are fully restored"
+        },
+        {
+          "rank": 5,
+          "score": 45,
+          "title": "Service degradation on Microsoft 365"
+        },
+        {
+          "rank": 6,
+          "score": 45,
+          "title": "Microsoft 365’s outage gets an apology, but no recovery timetable"
+        },
+        {
+          "rank": 8,
+          "score": 44,
+          "title": "What caused the Microsoft outage that's affecting millions of people?"
+        }
+      ],
+      "id": 1,
+      "label": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
+      "slots": 7
+    },
+    {
+      "clusters": [
+        {
+          "rank": 7,
+          "score": 45,
+          "title": "'Joyless & Demoralising': Microsoft Employees Slam Nadella’s AI Push & Buyouts | Firstpost America"
+        }
+      ],
+      "id": 2,
+      "label": "'Joyless & Demoralising': Microsoft Employees Slam Nadella’s AI Push & Buyouts | Firstpost America",
+      "slots": 1
+    }
+  ],
+  "max_slots": 3,
+  "tool": "slate-xray",
+  "top_event": {
+    "id": 1,
+    "label": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
+    "slots": 7
+  },
+  "top_event_share": 0.875,
+  "topic": "Microsoft",
+  "verdict": "violation",
+  "version": "1.0.0",
+  "violations": [
+    {
+      "code": "event-oversubscribed",
+      "detail": "event 1 takes 7 slots (limit 3)",
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    }
+  ],
+  "window": {
+    "end": "2026-11-15",
+    "start": "2026-10-16"
+  }
+}
